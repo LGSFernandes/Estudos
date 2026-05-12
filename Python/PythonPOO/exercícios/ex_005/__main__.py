@@ -1,0 +1,18 @@
+from rich import print, inspect
+from classes_ex_005 import Aluno, Professor, Funcionario
+
+
+a1 = Aluno('Luckas', 20, 'CC', 'Python')
+a1.fazer_aniversario()
+a1.fazer_matricula()
+# inspect(a1, methods = True)
+
+p1 = Professor('Guanabara', 48, 'Tecnologia', 'Mestre')
+p1.fazer_aniversario()
+p1.dar_aula()
+# inspect(p1, methods = True)
+
+f1 = Funcionario('Cleide', 35, 'Secretária', 'Administrativo')
+f1.fazer_aniversario()
+f1.bater_ponto()
+#inspect(f1, methods = True)

@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+
+    {% include 'nav.html' %}
+
+    <hr>
+
+    <div>
+
+        {% if current_user.is_authenticated %}
+            <span class="btn btn-primary">{{ current_user.nome }} {{ current_user.sobrenome }}</span>
+            <a href="{{ url_for('logout') }}" class="btn btn-danger">Sair</a>
+        {% else %}
+
+            <form action="" method="post" class="row mt-4 p-4 rounded border shadow">
+
+                <h3>Faça seu Login</h3>
+
+                {{ form.csrf_token }}
+
+                {{ form.email.label() }}
+                {{ form.email(class="form-control") }}
+
+                {{ form.senha.label() }}
+                {{ form.senha(class="form-control") }}
+
+                {{ form.btnSubmit(class="btn btn-primary col-12 mt-3") }}
+
+                <div class="col-12 mt-4">
+                    Não tem uma conta? <a href="{{ url_for('cadastro') }}">Clique aqui e Cadastre-se</a>
+                </div>
+
+            </form>
+
+            <a href="{{ url_for('cadastro') }}" class="btn btn-primary">Cadastre-se</a>
+        {% endif %}
+
+        <hr>
+
+        <img src="{{ url_for('static', filename='img/mortis.png') }}" alt="Mortis">
+
+    </div>
+</div>
+
+{% endblock %}

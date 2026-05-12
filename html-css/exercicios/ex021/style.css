@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+body {
+    background-image: linear-gradient(to right, rgb(252, 2, 252),rgb(145, 4, 145), rgb(75, 2, 75));
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+header {
+    background-color: rgba(87, 3, 87, 0.486);
+    padding: 10px;
+    margin: 10px;
+}
+
+h1, h2 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: white;
+}
+
+nav {
+    background-color: rgb(109, 57, 109);
+    padding: 3px;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    margin-right: 30px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+
+nav > a:hover {
+    text-decoration: underline;
+}
+
+main {
+    background-color: rgba(87, 3, 87, 0.486);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px 0px;
+}
+
+article {
+    background-color: rgb(109, 57, 109);
+}
+
+article > aside {
+    background-color: rgba(125, 76, 202, 0.432);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 4px;
+    margin: 0px;
+}
+
+footer > p {
+    margin: 0px;
+}
+
+#bola {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(68, 4, 68);
+    border-radius: 50%;
+    margin: 10px;
+}

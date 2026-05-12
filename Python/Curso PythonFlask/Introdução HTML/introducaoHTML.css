@@ -1,0 +1,56 @@
+.imagem {
+    width: 200px;
+    height: 200px;
+}
+
+.link {
+    width: 100px;
+    height: 30px;
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.link:hover {
+    background-color: #0056b3;
+    text-decoration: underline;
+}
+
+.tabela {
+    border: 1px solid #ccc;
+}
+
+.formulario {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #d0eaee, #71d1d8);
+    font-family: Arial, sans-serif;
+}
+
+.input {
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input:hover {
+    background-color: #307079;
+}
+
+.button {
+    width: 100px;
+    height: 30px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
