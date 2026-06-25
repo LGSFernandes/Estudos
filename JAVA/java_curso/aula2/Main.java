@@ -5,6 +5,8 @@ import java_curso.aula2.carro.CarroRecord;
 import java.util.*;
 import java.util.stream.Collectors;
 
+import static java.lang.StringTemplate.STR;
+
 public class Main {
     public static void main(String[] args) {
         List<String> list = new ArrayList<>();

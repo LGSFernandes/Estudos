@@ -7,3 +7,4 @@ venv/
 *.idea/
 *.iml
 *.class
+data/
